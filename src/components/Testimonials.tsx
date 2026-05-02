@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Star, Quote, ShieldCheck, Timer, Award, User, Settings, CheckCircle2 } from 'lucide-react';
+import { Star, Quote, Award, User, CheckCircle2 } from 'lucide-react';
 
 const testimonials = [
   {

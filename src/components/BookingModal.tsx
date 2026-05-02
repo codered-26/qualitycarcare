@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, CheckCircle2, ChevronDown, MessageCircle, Mail, ArrowLeft } from 'lucide-react';
 import { services } from '../data/services';
-import { CONTACT_INFO, WHATSAPP_LINK } from '../data/contact';
+import { WHATSAPP_LINK } from '../data/contact';
 
 const BookingModal: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

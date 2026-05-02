@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ShieldCheck, Clock, Bell, CheckCircle, Car, MapPin, Award, Sparkles } from 'lucide-react';
+import { ShieldCheck, Bell, CheckCircle, Car, MapPin, Award, Sparkles } from 'lucide-react';
 
 const WhyChooseUs: React.FC = () => {
   return (

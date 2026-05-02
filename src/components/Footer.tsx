@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { services } from '../data/services';
 import { CONTACT_INFO, WHATSAPP_LINK } from '../data/contact';
 import { 
