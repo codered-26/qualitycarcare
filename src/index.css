@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;700&family=DM+Sans:wght@400;500;700&family=Outfit:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light Mode Variables */
+  --garage-black: #FFFFFF;
+  --garage-dark: #F3F4F6;
+  --garage-card: #FFFFFF;
+  --garage-border: #E5E7EB;
+  --garage-silver: #4B5563;
+  --garage-white: #0A0A0A;
+  color-scheme: light;
+}
+
+.dark {
+  /* Dark Mode Variables */
+  --garage-black: #0A0A0A;
+  --garage-dark: #111111;
+  --garage-card: #1A1A1A;
+  --garage-border: #2A2A2A;
+  --garage-silver: #A0A0A0;
+  --garage-white: #F5F5F5;
+  color-scheme: dark;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  background-color: var(--garage-black);
+  color: var(--garage-white);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--garage-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E53E3E;
+  border-radius: 4px;
+}
+
+/* Scroll Progress Bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #E53E3E;
+  transform-origin: 0%;
+  z-index: 100;
+}
+
+/* Utilities */
+.glass {
+  background: var(--garage-black);
+  opacity: 0.95;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--garage-border);
+}
+
+.text-gradient-red {
+  background: linear-gradient(to right, #E53E3E, #FF2D20);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
