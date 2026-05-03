@@ -122,7 +122,7 @@ const Testimonials: React.FC = () => {
                   <User size={32} />
                 </div>
                 <div>
-                  <h3 className="font-display text-2xl text-white uppercase">{testimonials[0].name}</h3>
+                  <h3 className="font-display text-2xl text-garage-white uppercase">{testimonials[0].name}</h3>
                   <p className="font-mono text-[10px] text-garage-red uppercase tracking-widest">{testimonials[0].service}</p>
                 </div>
               </div>
@@ -135,11 +135,11 @@ const Testimonials: React.FC = () => {
                 <div className="flex gap-6">
                   <div>
                     <p className="font-mono text-[9px] text-garage-silver uppercase tracking-tighter mb-1 text-left">Location</p>
-                    <p className="font-display text-lg text-white uppercase">{testimonials[0].location}</p>
+                    <p className="font-display text-lg text-garage-white uppercase">{testimonials[0].location}</p>
                   </div>
                   <div>
                     <p className="font-mono text-[9px] text-garage-silver uppercase tracking-tighter mb-1 text-left">Service Date</p>
-                    <p className="font-display text-lg text-white uppercase">{testimonials[0].date}</p>
+                    <p className="font-display text-lg text-garage-white uppercase">{testimonials[0].date}</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2 px-3 py-1 bg-garage-red text-white font-mono text-[10px] uppercase tracking-[0.2em] -rotate-2">
@@ -171,11 +171,11 @@ const Testimonials: React.FC = () => {
               </p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-garage-white/5 border border-garage-border flex items-center justify-center font-display text-white">
+              <div className="w-10 h-10 rounded-full bg-garage-white/5 border border-garage-border flex items-center justify-center font-display text-garage-white">
                 {testimonials[1].name.charAt(0)}
               </div>
               <div>
-                <h4 className="font-display text-base text-white uppercase tracking-wide">{testimonials[1].name}</h4>
+                <h4 className="font-display text-base text-garage-white uppercase tracking-wide">{testimonials[1].name}</h4>
                 <p className="font-mono text-[8px] text-garage-silver uppercase tracking-widest">{testimonials[1].location}</p>
               </div>
             </div>
@@ -201,7 +201,7 @@ const Testimonials: React.FC = () => {
                   "{item.text}"
                 </p>
                 <div className="flex items-center justify-between">
-                  <h4 className="font-display text-lg text-white uppercase">{item.name}</h4>
+                  <h4 className="font-display text-lg text-garage-white uppercase">{item.name}</h4>
                   <div className="flex gap-0.5">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} size={10} className={i < 5 ? "text-garage-gold fill-garage-gold" : "text-garage-border"} />

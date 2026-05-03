@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
         title: 'Quality Car Care | Chennai',
         text: 'Best car repair and detailing in Moulivakkam, Chennai.',
         url: window.location.href,
-      }).catch(() => {});
+      }).catch(() => { });
     }
   };
 
@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
             <h2 className="font-display text-4xl md:text-6xl uppercase mb-8 text-garage-white">
               Visit <span className="text-garage-red">Our Garage</span>
             </h2>
-            
+
             <div className="space-y-8">
               <div className="flex gap-6">
                 <div className="w-12 h-12 bg-garage-red/10 border border-garage-red/30 flex items-center justify-center shrink-0">
@@ -68,25 +68,25 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="mt-12 flex gap-4">
-              <a 
-                href={CONTACT_INFO.mapsLink} 
-                target="_blank" 
+              <a
+                href="https://qualitycarcare-lgnt.vercel.app/"
+                target="_blank"
                 rel="noreferrer"
                 className="w-12 h-12 border border-garage-border flex items-center justify-center hover:bg-garage-red hover:border-garage-red text-garage-silver hover:text-white transition-all shadow-lg"
                 title="Google Maps"
               >
                 <Globe size={24} />
               </a>
-              <a 
-                href={WHATSAPP_LINK} 
-                target="_blank" 
+              <a
+                href={WHATSAPP_LINK}
+                target="_blank"
                 rel="noreferrer"
                 className="w-12 h-12 border border-garage-border flex items-center justify-center hover:bg-garage-red hover:border-garage-red text-garage-silver hover:text-white transition-all shadow-lg"
                 title="WhatsApp Us"
               >
                 <MessageSquare size={24} />
               </a>
-              <button 
+              <button
                 onClick={handleShare}
                 className="w-12 h-12 border border-garage-border flex items-center justify-center hover:bg-garage-red hover:border-garage-red text-garage-silver hover:text-white transition-all shadow-lg"
                 title="Share Website"
@@ -103,18 +103,18 @@ const Contact: React.FC = () => {
             viewport={{ once: true }}
             className="h-[450px] border border-garage-border p-2 bg-garage-card"
           >
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.4103138378!2d80.1471339!3d13.0094951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5260f855555555%3A0x6b8a8b8b8b8b8b8b!2sQuality%20Car%20Care%2C%20Moulivakkam!5e0!3m2!1sen!2sin!4v1714480000000!5m2!1sen!2sin" 
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.4103138378!2d80.1471339!3d13.0094951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5260f855555555%3A0x6b8a8b8b8b8b8b8b!2sQuality%20Car%20Care%2C%20Moulivakkam!5e0!3m2!1sen!2sin!4v1714480000000!5m2!1sen!2sin"
               className="w-full h-full opacity-80 hover:opacity-100 transition-opacity"
-              style={{ border: 0 }} 
-              allowFullScreen={true} 
-              loading="lazy" 
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </motion.div>
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   );
 };
 
